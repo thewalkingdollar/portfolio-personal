@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "name": "Blessed Chisanga",
+    "title": "IT Specialist & Frontend Developer",
+    "description": "Computer Science student at ZCAS University with 7+ years of combined experience in IT support, systems administration, and digital media. Building robust solutions for modern challenges.",
+    "location": "Lusaka, Zambia",
+    "phone": "+260 771935315",
+    "email": "blessedchisanga10@gmail.com"
+  },
+  "about": {
+    "text1": "I'm a passionate IT Specialist and Frontend Developer currently pursuing Computer Science at ZCAS University. With over 7 years of hands-on experience in IT support, systems administration, and digital media, I bring a unique blend of technical expertise and creative problem-solving to every project.",
+    "text2": "I also manage my own Ubuntu Server infrastructure with SSH for remote photo storage and backup solutions since 2026. My expertise spans from frontend development to network configuration and system administration."
+  },
+  "skills": [
+    {
+      "name": "Ubuntu Server",
+      "icon": "fa-brands fa-ubuntu",
+      "desc": "Ubuntu Server management, SSH configuration, network setup, and infrastructure maintenance."
+    },
+    {
+      "name": "Network Administration",
+      "icon": "fa-solid fa-network-wired",
+      "desc": "Network configuration, troubleshooting, and security implementation."
+    },
+    {
+      "name": "IT Support",
+      "icon": "fa-solid fa-headset",
+      "desc": "Comprehensive IT support and systems administration for multiple clients."
+    },
+    {
+      "name": "Frontend Development",
+      "icon": "fa-solid fa-code",
+      "desc": "React, TypeScript, Tailwind CSS, modern web development."
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "SIS Portal - Student Information System",
+      "description": "Full-stack SIS portal built with React/TypeScript featuring role-based dashboards, complete CRUD operations, student management, and real-time data updates.",
+      "tags": [
+        "React",
+        "TypeScript",
+        "Full-Stack"
+      ],
+      "demoUrl": "https://preview--db5fd247-453c-4bc4-8df3-040ccab9a18a.aippy.live/#sis-page=projects",
+      "githubUrl": "",
+      "status": "live"
+    },
+    {
+      "id": 2,
+      "title": "Personal Ubuntu Server",
+      "description": "Self-hosted Ubuntu Server infrastructure for remote photo storage and backup. Configured SSH access, automated backups, network security, and file management.",
+      "tags": [
+        "Ubuntu",
+        "SSH"
+      ],
+      "demoUrl": "",
+      "githubUrl": "",
+      "status": "placeholder"
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "role": "IT Specialist",
+      "company": "Blessed Solutions Systems Ltd",
+      "duration": "2018 - Present",
+      "details": [
+        "Provided comprehensive IT support and systems administration for multiple clients",
+        "Managed network infrastructure, server maintenance, and hardware troubleshooting",
+        "Implemented security protocols and backup solutions for critical business data"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "school": "ZCAS University",
+      "duration": "2022 - Present",
+      "location": "Lusaka, Zambia"
+    }
+  ]
+}

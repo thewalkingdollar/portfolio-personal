@@ -1,0 +1,34 @@
+# Anti-duplicate protection - 365 days guarantee
+# Block common duplicate patterns from multiple unzip
+*_1.html
+*_2.html
+*_3.html
+*_4.html
+*_5.html
+*_1_*.html
+*_2_*.html
+*_1.css
+*_2.css
+*_3.css
+*_1.js
+*_2.js
+*_3.js
+*\ 1.*
+*\ 2.*
+*\(1).*
+*\(2).*
+
+# OS files
+.DS_Store
+Thumbs.db
+*.log
+
+# Dependencies
+node_modules/
+contacts.db
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Prevent accidental duplicate folders
+Portfolio_*/
+FINAL_*/

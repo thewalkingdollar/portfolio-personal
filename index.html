@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blessed Chisanga | IT Specialist & Frontend Developer</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class'}</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-50 dark:bg-slate-900">
+
+<!-- 6 Second Loader -->
+<div id="pageLoader" style="position:fixed; inset:0; background:#0f172a; z-index:20000; display:flex; align-items:center; justify-content:center; flex-direction:column; transition: opacity 0.8s ease;">
+  <div style="width:60px; height:60px; border:4px solid #1e293b; border-top-color:#3b82f6; border-radius:50%; animation: spin 1s linear infinite;"></div>
+  <h2 style="color:white; font-weight:bold; font-size:24px; margin-top:20px; font-family:Poppins;">BC</h2>
+  <p style="color:#94a3b8; font-size:14px; margin-top:8px;">Loading portfolio...</p>
+  <div style="width:120px; height:3px; background:#1e293b; border-radius:9999px; margin-top:16px; overflow:hidden;"><div id="loaderBar" style="height:100%; width:0%; background:#3b82f6; transition: width 0.1s linear;"></div></div>
+  <style>@keyframes spin{to{transform:rotate(360deg)}}</style>
+</div>
+
+<nav class="fixed w-full top-0 z-50 bg-white/80 backdrop-blur border-b"><div class="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center"><a href="https://preview--db5fd247-453c-4bc4-8df3-040ccab9a18a.aippy.live/#sis-page=projects" class="font-bold text-xl"><span class="gradient-text">BC</span></a><div class="hidden md:flex gap-6 text-sm"><a href="#about-section">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a></div></div></nav>
+
+<section class="pt-32 pb-20"><div class="max-w-7xl mx-auto px-4"><h1 id="heroName" class="text-5xl font-bold mb-2"></h1><p id="heroTitle" class="text-2xl gradient-text font-medium mb-4"></p><p id="heroDesc" class="text-slate-600 max-w-xl mb-6"></p><p class="text-sm"><span id="heroLocation"></span> • <span id="heroPhone"></span></p></div></section>
+
+<section id="about-section" class="py-12 bg-white"><div class="max-w-7xl mx-auto px-4"><h2 class="text-2xl font-bold mb-4">About</h2><p id="aboutText1" class="text-sm text-slate-600 mb-3"></p><p id="aboutText2" class="text-sm text-slate-600"></p></div></section>
+
+<section id="skills" class="py-16 bg-slate-50"><div class="max-w-7xl mx-auto px-4"><h2 class="text-3xl font-bold text-center mb-10">Skills</h2><div id="skillsContainer" class="grid md:grid-cols-4 gap-6"></div></div></section>
+
+<section id="projects" class="py-16 bg-white"><div class="max-w-7xl mx-auto px-4"><h2 class="text-3xl font-bold text-center mb-10">Projects</h2><div id="projectsContainer" class="grid md:grid-cols-2 gap-8"></div></div></section>
+
+<section id="experience" class="py-16 bg-slate-50"><div class="max-w-4xl mx-auto px-4"><h2 class="text-3xl font-bold text-center mb-10">Experience</h2><div id="experienceContainer" class="space-y-6"></div></div></section>
+
+<section id="education" class="py-16 bg-white"><div class="max-w-4xl mx-auto px-4"><h2 class="text-3xl font-bold text-center mb-10">Education</h2><div id="educationContainer"></div></div></section>
+
+<section id="contact" class="py-16 bg-slate-50"><div class="max-w-4xl mx-auto px-4"><h2 class="text-3xl font-bold text-center mb-10">Contact</h2><form id="contactForm" class="bg-white p-8 rounded-2xl shadow border"><div class="grid sm:grid-cols-2 gap-4 mb-4"><input id="name" required placeholder="Name" class="px-4 py-3 border rounded-lg w-full"><input id="email" required type="email" placeholder="Email" class="px-4 py-3 border rounded-lg w-full"></div><input id="subject" placeholder="Subject" class="w-full px-4 py-3 border rounded-lg mb-4"><textarea id="message" required rows="4" placeholder="Message" class="w-full px-4 py-3 border rounded-lg mb-4"></textarea><button class="w-full py-3 bg-blue-600 text-white rounded-lg">Send Message</button><p id="formMessage" class="hidden text-center mt-3 text-sm"></p></form></div></section>
+
+<footer class="bg-slate-900 text-slate-400 py-10 text-center text-sm"><p>&copy; 2026 Blessed Chisanga • CMS Enabled • No Duplicates • PIN Hidden</p></footer>
+
+<div style="position:fixed; bottom:20px; left:20px; z-index:9999;"><button id="adminBtn" style="background:#0f172a; color:white; padding:12px 20px; border-radius:9999px; font-weight:bold; box-shadow:0 10px 20px rgba(0,0,0,0.3); cursor:pointer; border:none;">Admin</button></div>
+<div id="pinModal" style="position:fixed; inset:0; background:rgba(0,0,0,0.6); z-index:10000; display:none; align-items:center; justify-content:center; padding:16px;"><div style="background:white; border-radius:16px; padding:28px; max-width:340px; width:100%;"><h3 style="font-weight:bold; text-align:center;">Admin Access</h3><input type="password" id="pinInput" placeholder="...." style="width:100%; padding:12px; border:2px solid #e2e8f0; border-radius:10px; text-align:center; font-size:22px; letter-spacing:0.5em; margin-top:12px;"><p id="pinError" style="color:red; font-size:12px; text-align:center; margin-top:6px; display:none;">Access denied</p><div style="display:flex; gap:8px; margin-top:12px;"><button onclick="closePin()" style="flex:1; padding:10px; background:#f1f5f9; border-radius:10px; border:none; cursor:pointer;">Cancel</button><button onclick="checkPin()" style="flex:1; padding:10px; background:#0f172a; color:white; border-radius:10px; border:none; cursor:pointer;">Unlock</button></div></div></div>
+
+<script>
+let contentData=null;
+async function loadContent(){
+  try{const r=await fetch('content.json');contentData=await r.json();const local=JSON.parse(localStorage.getItem('siteContent')||'null');if(local)contentData={...contentData,...local,hero:{...contentData.hero,...(local.hero||{})},about:{...contentData.about,...(local.about||{})}};}catch(e){contentData=JSON.parse(localStorage.getItem('siteContent')||'null')||{"hero": {"name": "Blessed Chisanga", "title": "IT Specialist & Frontend Developer", "description": "Computer Science student at ZCAS University with 7+ years of combined experience in IT support, systems administration, and digital media. Building robust solutions for modern challenges.", "location": "Lusaka, Zambia", "phone": "+260 771935315", "email": "blessedchisanga10@gmail.com"}, "about": {"text1": "I'm a passionate IT Specialist and Frontend Developer currently pursuing Computer Science at ZCAS University. With over 7 years of hands-on experience in IT support, systems administration, and digital media, I bring a unique blend of technical expertise and creative problem-solving to every project.", "text2": "I also manage my own Ubuntu Server infrastructure with SSH for remote photo storage and backup solutions since 2026. My expertise spans from frontend development to network configuration and system administration."}, "skills": [{"name": "Ubuntu Server", "icon": "fa-brands fa-ubuntu", "desc": "Ubuntu Server management, SSH configuration, network setup, and infrastructure maintenance."}, {"name": "Network Administration", "icon": "fa-solid fa-network-wired", "desc": "Network configuration, troubleshooting, and security implementation."}, {"name": "IT Support", "icon": "fa-solid fa-headset", "desc": "Comprehensive IT support and systems administration for multiple clients."}, {"name": "Frontend Development", "icon": "fa-solid fa-code", "desc": "React, TypeScript, Tailwind CSS, modern web development."}], "projects": [{"id": 1, "title": "SIS Portal - Student Information System", "description": "Full-stack SIS portal built with React/TypeScript featuring role-based dashboards, complete CRUD operations, student management, and real-time data updates.", "tags": ["React", "TypeScript", "Full-Stack"], "demoUrl": "https://preview--db5fd247-453c-4bc4-8df3-040ccab9a18a.aippy.live/#sis-page=projects", "githubUrl": "", "status": "live"}, {"id": 2, "title": "Personal Ubuntu Server", "description": "Self-hosted Ubuntu Server infrastructure for remote photo storage and backup. Configured SSH access, automated backups, network security, and file management.", "tags": ["Ubuntu", "SSH"], "demoUrl": "", "githubUrl": "", "status": "placeholder"}], "experience": [{"id": 1, "role": "IT Specialist", "company": "Blessed Solutions Systems Ltd", "duration": "2018 - Present", "details": ["Provided comprehensive IT support and systems administration for multiple clients", "Managed network infrastructure, server maintenance, and hardware troubleshooting", "Implemented security protocols and backup solutions for critical business data"]}], "education": [{"degree": "Bachelor of Science in Computer Science", "school": "ZCAS University", "duration": "2022 - Present", "location": "Lusaka, Zambia"}]};} 
+  document.getElementById('heroName').textContent=contentData.hero.name;document.getElementById('heroTitle').textContent=contentData.hero.title;document.getElementById('heroDesc').textContent=contentData.hero.description;document.getElementById('heroLocation').textContent=contentData.hero.location;document.getElementById('heroPhone').textContent=contentData.hero.phone;
+  document.getElementById('aboutText1').textContent=contentData.about.text1;document.getElementById('aboutText2').textContent=contentData.about.text2;
+  document.getElementById('skillsContainer').innerHTML=contentData.skills.map(s=>`<div class="bg-white p-6 rounded-xl shadow border"><i class="${s.icon}"></i><h3 class="font-semibold mt-2">${s.name}</h3><p class="text-sm text-slate-600 mt-1">${s.desc}</p></div>`).join('');
+  document.getElementById('projectsContainer').innerHTML=contentData.projects.map(p=>`<div class="bg-white p-6 rounded-xl shadow border"><h3 class="font-bold text-xl mb-2">${p.title}</h3><p class="text-sm text-slate-600 mb-4">${p.description}</p><div class="flex gap-3">${p.status==='live'&&p.demoUrl?`<a href="${p.demoUrl}" target="_blank" class="px-4 py-2 bg-blue-600 text-white text-sm rounded">Live Demo</a>`:`<span class="px-4 py-2 bg-slate-300 text-slate-500 text-sm rounded">Documentation (Placeholder)</span>`}</div></div>`).join('');
+  document.getElementById('experienceContainer').innerHTML=contentData.experience.map(e=>`<div class="bg-white p-6 rounded-xl shadow border"><div class="flex justify-between"><div><h3 class="font-bold text-xl">${e.role}</h3><p class="text-blue-600">${e.company}</p></div><span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">${e.duration}</span></div><ul class="mt-3 text-sm text-slate-600">${e.details.map(d=>`<li>• ${d}</li>`).join('')}</ul></div>`).join('');
+  document.getElementById('educationContainer').innerHTML=contentData.education.map(ed=>`<div class="bg-white p-6 rounded-xl shadow border"><h3 class="font-bold">${ed.degree}</h3><p class="text-blue-600">${ed.school}</p><p class="text-sm text-slate-500">${ed.duration} • ${ed.location}</p></div>`).join('');
+}
+loadContent();
+const _pin="4347";
+function openPin(){document.getElementById('pinModal').style.display='flex';}
+function closePin(){document.getElementById('pinModal').style.display='none';}
+function checkPin(){if(document.getElementById('pinInput').value===_pin){window.location.href='backend/admin.html';}else{document.getElementById('pinError').style.display='block';}}
+document.getElementById('adminBtn').addEventListener('click',openPin);
+document.getElementById('pinInput').addEventListener('keypress',e=>{if(e.key==='Enter')checkPin();});
+document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();const data={name:document.getElementById('name').value,email:document.getElementById('email').value,subject:document.getElementById('subject').value,message:document.getElementById('message').value,date:new Date().toISOString()};const subs=JSON.parse(localStorage.getItem('contactSubmissions')||'[]');subs.push(data);localStorage.setItem('contactSubmissions',JSON.stringify(subs));document.getElementById('formMessage').textContent='Saved!';document.getElementById('formMessage').classList.remove('hidden');e.target.reset();});
+</script>
+
+<script>
+// 6 second loader
+document.addEventListener('DOMContentLoaded', ()=>{
+  const loader = document.getElementById('pageLoader');
+  const bar = document.getElementById('loaderBar');
+  let progress = 0;
+  const interval = setInterval(()=>{
+    progress += 100/60; // 60 steps for 6 seconds (100ms each)
+    if(bar) bar.style.width = progress + '%';
+    if(progress >= 100){
+      clearInterval(interval);
+      if(loader){
+        loader.style.opacity = '0';
+        setTimeout(()=>{loader.style.display='none';}, 800);
+      }
+    }
+  }, 100); // 100ms * 60 = 6000ms = 6 seconds
+});
+</script>
+
+</body>
+</html>
